@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>---</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="barra-botones">
+      <select id="tipoEtiqueta" onchange="añadirEtiqueta(this.value)">
+        <option selected>Selecciona una etiqueta</option>
+        <option value="h1">h1</option>
+        <option value="h2">h2</option>
+        <option value="h3">h3</option>
+        <option value="p">p</option>
+        <option value="div">div</option>
+        <option value="a">a</option>
+        <option value="header">header</option>
+        <option value="footer">footer</option>
+        <option value="select">select</option>
+      </select>
+        <a> | </a>
+        
+        
+        
+        
+        <select id="tipoInput" onchange="añadirInput()">
+            <option disabled selected>Selecciona input</option>
+            <option value="text">Texto</option>
+            <option value="password">Contraseña</option>
+            <option value="radio">Radio</option>
+            <option value="checkbox">Checkbox</option>
+            <option value="button">Botón</option>
+            <option value="date">Fecha</option>
+            <option value="range">Rango</option>
+        </select>
+        
+        <a> | </a>
+        <button onclick="alternarComentarios()">Mostrar Comentarios</button>
+      </div>
+      
+      </div>
+    
+      <div class="contenedor-calderos">
+        <textarea id="calderoHTML" spellcheck="false" placeholder="Aquí tu HTML..."></textarea>
+        <textarea id="calderoCSS" spellcheck="false" placeholder="Aquí tu estilo CSS..."></textarea>
+      </div>
+    
+      <iframe id="espejoMagico"></iframe>
+    
+      <script src="hechizo.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
